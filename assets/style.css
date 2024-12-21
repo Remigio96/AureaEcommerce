@@ -119,6 +119,39 @@ hr{
     transition: 0.3s ease;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar {
+    max-width: 0; /* Ancho inicial cerrado */
+    opacity: 0; /* Invisible al inicio */
+    transition: max-width 0.4s ease, opacity 0.4s ease; /* Transiciones fluidas */
+    width: 150px; /* Ancho total deseado */
+    padding: 0; /* Sin padding inicial */
+    overflow: hidden; /* Evita desbordes en la animación */
+    border: 1px solid transparent; /* Sin borde inicial */
+}
+
+.search-bar.active {
+    max-width: 150px; /* Abre la barra */
+    opacity: 1; /* Hace visible el input */
+    padding: 0.5rem; /* Ajusta el padding */
+    border: 1px solid #ddd; /* Añade borde visible */
+}
+
+
+.icon-container i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+
+
 #bar{
     font-size: 1.5rem;
     padding: 7px;
@@ -437,3 +470,5 @@ footer .copyright a:hover {
         height: auto; /* Mantiene la proporción */
         margin: 0; /* Elimina márgenes adicionales */
     }
+
+    

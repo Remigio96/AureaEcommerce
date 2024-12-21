@@ -24,10 +24,7 @@
     <!-- NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
-            <a href="index.html">
-                <img src="assets/img/Logo 1.svg" alt="Logo website">
-            </a>
-            
+            <img src="assets/img/Logo 1.svg" alt="Logo website">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -48,10 +45,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-                    <li class="nav-item icon-container">
-                        <i class="bi bi-search"></i>
-                        <i class="bi bi-bag"></i>
+                    <li class="nav-item d-flex align-items-center icon-container">
+                        <div class="search-container d-flex align-items-center">
+                            <i class="bi bi-search search-icon me-2"></i>
+                            <input type="text" class="form-control search-bar" placeholder="Search...">
+                        </div>
+                        <i class="bi bi-bag ms-3"></i>
                     </li>
+
+
+                </ul>
             </div>
         </div>
     </nav>
@@ -160,7 +163,7 @@
                 <h4 class="p-price">$ 60,600</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            
+
         </div>
     </section>
 
@@ -174,7 +177,7 @@
 
     <section id="clothes" class="my-5">
         <div class="container text-center mt-5 py-5">
-            <h3>Dresses & Jumpsuits</h3>
+            <h3>Dresses &amp; Jumpsuits</h3>
             <hr class="mx-auto">
             <p>Discover our trendy dresses and jumpsuits, designed to enhance your style for any occasion.</p>
         </div>
@@ -232,7 +235,7 @@
                 <h4 class="p-price">$ 290,300</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            
+
         </div>
     </section>
 
@@ -240,8 +243,9 @@
         <div class="container text-center mt-5 py-5">
             <h3>Best Hats</h3>
             <hr class="mx-auto">
-            <p><p>Explore our stylish hats collection, perfect to complement your look in every season.</p>
-        </p>
+            <p>
+            <p>Explore our stylish hats collection, perfect to complement your look in every season.</p>
+            </p>
         </div>
         <div class="row mx-auto container-fluid">
             <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -298,7 +302,7 @@
                 <h4 class="p-price">$ 82,500</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            
+
         </div>
     </section>
 
@@ -306,8 +310,9 @@
         <div class="container text-center mt-5 py-5">
             <h3>Jewelry</h3>
             <hr class="mx-auto">
-            <p><p>Shop our refined jewelry selection, created to bring elegance and charm to your look.</p>
-        </p>
+            <p>
+            <p>Shop our refined jewelry selection, created to bring elegance and charm to your look.</p>
+            </p>
         </div>
         <div class="row mx-auto container-fluid">
             <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -365,7 +370,7 @@
                 <h4 class="p-price">$ 50,200</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
-            
+
         </div>
     </section>
 
@@ -373,7 +378,9 @@
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="/assets/img/Logo 2.svg" alt="">
-                <p class="pt-3">Aurea is your destination for thoughtfully designed clothing and accessories, combining comfort, quality, and timeless style. Explore our collections to find pieces that seamlessly fit into your everyday life and special moments.</p>
+                <p class="pt-3">Aurea is your destination for thoughtfully designed clothing and accessories, combining
+                    comfort, quality, and timeless style. Explore our collections to find pieces that seamlessly fit
+                    into your everyday life and special moments.</p>
             </div>
             <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
                 <h5 class="pb-2">Featured</h5>
@@ -383,7 +390,7 @@
                     <li><a href="">New Arrivals</a></li>
                     <li><a href="">Best Sellers</a></li>
                     <li><a href="">Clothing</a></li>
-                    <li><a href="">Shoews & Accesories</a></li>
+                    <li><a href="">Shoews &amp; Accesories</a></li>
                     <li><a href="">Crest Collection</a></li>
 
                 </ul>
@@ -393,7 +400,8 @@
                 <h5 class="pb-2">Contact Us</h5>
                 <div>
                     <h6 class="text-uppercase">Address</h6>
-                    <p>Avenida Presidente Kennedy 5601 Rosario Norte, Esquina, Av. Pdte. Kennedy, Santiago, Región Metropolitana</p>
+                    <p>Avenida Presidente Kennedy 5601 Rosario Norte, Esquina, Av. Pdte. Kennedy, Santiago, Región
+                        Metropolitana</p>
                 </div>
                 <div>
                     <h6 class="text-uppercase">Phone</h6>
@@ -428,10 +436,10 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
-        <di class="copyright mt-5">
+        <div class="copyright mt-5">
             <div class="row container mx-auto">
                 <div class="col-lg-3 col-md-6 col-12 mb-4">
                     <img src="/assets/img/payment/visa-3-svgrepo-com.svg" alt="">
@@ -462,6 +470,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelector('.search-icon').addEventListener('click', function () {
+            const searchBar = document.querySelector('.search-bar');
+            if (searchBar.classList.contains('active')) {
+                searchBar.classList.remove('active'); // Contrae la barra
+            } else {
+                searchBar.classList.add('active'); // Expande la barra
+            }
+        });
+    </script>
 </body>
 
 </html>
