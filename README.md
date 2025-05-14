@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/891a37c8-881b-4ba6-bbbf-e0ee8f1bb56b)
+
 # AureaEcommerce
 
 **AureaEcommerce** es una maqueta de sitio web desarrollada para una tienda de accesorios y ropa de mujer. El proyecto está construido con tecnologías web estándar y tiene como objetivo funcionar completamente en modo offline, sin necesidad de servidor local.
